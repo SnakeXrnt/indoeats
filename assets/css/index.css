@@ -1,0 +1,232 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply your color palette */
+:root {
+    --primary-red: #FF0000;
+    --primary-yellow: #ffff00;
+    --primary-orange: #FF8C00;
+    --support-brown: #7c2020;
+    --support-white: #FFFFFF;
+    --support-gray: #c39393a8;
+}
+
+
+.home {
+    /* Set the background image and its properties */
+    background-image: url('/assets/photo/home.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 80vh; 
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+.home h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 10vh;
+    color: #ffffff;
+    width: 65vw;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+    padding-left: 2vw;
+}
+
+.home h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+}
+
+.button {
+    padding-left: 2vw;
+    padding-bottom: 5vh;
+}
+
+
+#scroll-button {
+    background-color: var(--primary-orange); /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the button text */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    font-size: 16px; /* Font size */
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+    transition: background-color 0.3s ease-in-out; 
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+#scroll-button:hover {
+    background-color: var(--primary-orange); /* Change background color on hover */
+}
+
+
+/* Style the navbar */
+.navbar {
+    background-color: var(--support-brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--support-white);
+    font-family: 'Merriweather', serif;
+}
+
+/* Style the logo */
+.logo a {
+    text-decoration: none;
+    color: var(--support-white);
+    font-size: 24px;
+}
+
+/* Style the search box and language switcher */
+.search-language {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    margin-right: 20px;
+}
+
+.search-box input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 40vw;
+    background-color: #c39393a8;
+    border-radius: 5px;
+    border-color: #FF0000;
+}
+
+.search-box input[type="text"]::placeholder {
+    color: #ffffff; 
+    font-family: 'Merriweather', serif;
+}
+
+/* Add transitions for smooth opacity changes to the placeholder span */
+.placeholder-fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Prevent interaction with the span */
+}
+
+/* Style the search box container */
+.search-box {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+/* Style the search input */
+.search-input {
+    position: relative;
+    flex-grow: 1; /* Allow the input to grow and take available space */
+}
+
+/* Style the search button */
+.search-button {
+    background: none; /* Remove button background */
+    border: none; /* Remove button border */
+    cursor: pointer;
+    padding: 0; /* Remove button padding */
+    margin-left: 10px; /* Adjust spacing between input and button */
+}
+
+
+.search-box button {
+    background-color: var(--primary-yellow);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: var(--support-brown);
+    cursor: pointer;
+    font-size: 14px;
+}
+.search-box button span {
+    font-size: 14px;
+  }
+
+.language-switcher select {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: var(--support-gray);
+    color: var(--support-white);
+}
+
+.recommendation {
+  background-color: var(--support-brown);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  border: 10px var(--primary-yellow)
+}
+
+.rec {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border-radius: 10px;
+  height: 30vh;
+  background-color: var(--primary-orange);
+  width: 25vw;
+}
+
+.rec-title {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.line-break {
+    width: 100%;
+  }
+
+.rec-link {
+    
+}
+
+@media screen and (max-width: 600px) {
+    .recommendation > div {
+        display: flex;
+        justify-content: center;
+        flex-basis: 80%;
+    }
+}
+
+.food-title {
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    padding: 30vh 0;
+    background-color: pink;
+}
+
+.food-desc {
+    width: 80%;
+    margin: auto;
+    padding: 5vh 0;
+    font
+}
+
+.bg {
+    width: 100%;
+    background-color: var(--support-brown);
+    height:35vh;
+}
