@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Flavours of Indonesia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,300&display=swap" rel="stylesheet">
@@ -17,12 +17,25 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+
+
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#">My Logo</a>
+                <a href="#" id="title-navbar">IndoEats</a>
             </div>
             <div class="search-box">
                 <div class="search-input">
@@ -34,22 +47,58 @@
                 </button>
             </div>
             <div class="language-switcher">
-                <label for="language-toggle">Language:</label>
+                <label for="language-toggle">Lang:</label>
                 <select id="language-toggle">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
+                    <option value="en">En</option>
+                    <option value="es">Es</option>
+                    <option value="fr">Fr</option>
                 </select>
+                <div class="navbar-username">
+                    <p> Hi, Ethan </p>
+                    <p class="navbar-profile-pict"> 
+                        <span class="material-symbols-outlined">
+                            account_circle
+                            </span>
+                    </p>
+                </div>
             </div>
 
         </nav>
     </header>
-    <div class="food-title">
-        <h1>FRIED RICE</h1>
+
+    <nav class="mobile-navbar-top">
+        
+    </nav>
+    <nav class="mobile-navbar-bottom">
+        <div class="search-box">
+            <div class="search-input">
+                <input type="text">
+                <span class="placeholder-fade"></span>
+            </div>
+            <button type="submit" class="search-button">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="sub-home">
+        <h2>Nasi Goreng</h2>
     </div>
-    <div class="bg">
-        <div class="food-desc">
-            <p>Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat. It is often eaten by itself or as an accompaniment to another dish. Fried rice is a popular component of East Asian, Southeast Asian and certain South Asian cuisines, as well as a staple national dish of Indonesia. As a homemade dish, fried rice is typically made with ingredients left over from other dishes, leading to countless variations. Fried rice first developed during the Sui Dynasty in China.</p>
+    <div class="sub-main">
+        <ul>
+            <h1>Ingredients:</h1>
+            <li>Rice</li>
+            <li>Onion</li>
+            <li>Vegetables</li>
+            <li>Eggs</li>
+            <li>Sesame Oil</li>
+            <li>Soy Sauce</li>
+            <li>Green Onions</li>
+        </ul>
+        <div class="delivery">
+            <h1>Available on</h1>
+            <img src="/assets/photo/home.png" alt="">
+            <img src="/assets/photo/home.png" alt="">
         </div>
     </div>
 </body>

@@ -19,6 +19,9 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
@@ -49,7 +52,7 @@
                 </select>
                 <div class="navbar-username">
                     <p> Hi, Ethan </p>
-                    <p class="navbar-profile-pict">
+                    <p class="navbar-profile-pict"> 
                         <span class="material-symbols-outlined">
                             account_circle
                             </span>
@@ -60,36 +63,104 @@
         </nav>
     </header>
 
+    <nav class="mobile-navbar-top">
+        <div class="navbar-username">
+            <p> Hi, Ethan </p>
+            <p class="navbar-profile-pict"> 
+                <span class="material-symbols-outlined">
+                    account_circle
+                    </span>
+            </p>
+        </div>
+    </nav>
+    
+    <nav class="mobile-navbar-bottom">
+        <div class="search-box">
+            <div class="search-input">
+                <input type="text">
+                <span class="placeholder-fade"></span>
+            </div>
+            <button type="submit" class="search-button">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </div>
+    </nav>
+
     <div class="home">
         <div class="button">
             <button id="scroll-button">Start your journey here</button>
         </div>
         <h2>Explore the Rich and Diverse Culinary Traditions</h2>
         <h1>Welcome to IndoEats</h1>
+    </div>
 
+    <div class="recommendation-header">
+        <h1>RECOMMENDATIONS</h1>
+        <p>A selection of noteworthy cuisine originating from Indonesia</p>
     </div>
+
     <div class="recommendation" id="next-section">
-        <a class="rec-link" href="nasi.html">
-            <div class="rec" style="background-image:url('assets/photo/home.png');">
-                <h1 class="rec-title">nasi<h1>
-            </div>
+            <a href="nasi.html">
+            <button class="rec">
+                <h1 class="rec-title">Fried Rice<h1>
+                    <img src="/assets/photo/home.png" alt="" class="desc-img">
+                    <p>☆☆☆☆☆</p>
+                <p>Very Popular</p>
+            </button>
+            </a>
+            <a href="nasi.html">
+                <button class="rec">
+                    <h1 class="rec-title">Noodles<h1>
+                        <img src="/assets/photo/home.png" alt="" class="desc-img">
+                        <p>☆☆☆☆☆</p>
+                    <p>Popular</p>
+                </button>
+            </a>
+            <a href="nasi.html">
+                <button class="rec">
+                    <h1 class="rec-title">Meatballs<h1>
+                        <img src="/assets/photo/home.png" alt="" class="desc-img">
+                        <p>☆☆☆☆</p>
+                    <p>Popular</p>
+                </button>
+            </a>
         </a>
-        <div class="rec">
-            <h1 class="rec-title">nasi<h1>
-        </div>
-        <div class="rec">
-            <h1 class="rec-title">nasi<h1>
-        </div>
-        <div class="line-break"></div>
-        <div class="rec">
-            <h1 class="rec-title">nasi<h1>
-        </div>
-        <div class="rec">
-            <h1 class="rec-title">nasi<h1>
-        </div>
-        <div class="rec">
-            <h1 class="rec-title">nasi<h1>
-        </div>
+        <a href="nasi.html">
+            <button class="rec">
+                <h1 class="rec-title">Satay<h1>
+                    <img src="/assets/photo/home.png" alt="" class="desc-img">
+                    <p>☆☆☆</p>
+                <p>Niche</p>
+            </button>
+        </a>
     </div>
+    <footer>
+        <div class="left">
+            <h2>Indo Eats</h2>
+            <ul>
+                <li><p>Created By :</p></li>
+                <li><p>- Ethan Bastian</p></li>
+                <li><p>- M William Syarif</p></li>
+                <li><p>- Daniel Lee</p></li>
+              </ul>
+        </div>
+        <div class="middle">
+            <h2>Indo Eats</h2>
+            <ul>
+                <li><p>Created By :</p></li>
+                <li><p>- Ethan Bastian</p></li>
+                <li><p>- M William Syarif</p></li>
+                <li><p>- Daniel Lee</p></li>
+              </ul>
+        </div>
+        <div class="right">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><p><a href="https://wa.me/6281368449686">Whatsapp</a></p></li>
+                <li><p><a href="https://instagram.com/bastianeth__">Instagram</a></p></li>
+                <li><p><a href="mailto:ethanbastian11@gmail.com">Email</a></p></li>
+              </ul>
+        </div>
+    </footer>
 </body>
 </html>

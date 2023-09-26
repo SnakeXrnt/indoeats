@@ -15,6 +15,15 @@
     --support-gray: #c39393a8;
 }
 
+a {
+    text-decoration: none;
+  }
+  
+
+
+body { 
+    background: var(--primary-yellow);
+}
 
 .home {
     /* Set the background image and its properties */
@@ -33,18 +42,19 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 10vh;
     color: #ffffff;
-    width: 65vw;
+    width: 65vh;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
     padding-left: 2vw;
 }
 
 .home h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3vh;
+    font-size: 5vh;
     color: #ffffff;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
     padding-left: 2vw;
     padding-bottom: 1vh;
+    width: 65vw;
 }
 
 .button {
@@ -105,6 +115,154 @@
     padding: 10px 20px;
     color: var(--support-white);
     font-family: 'Montserrat', sans-serif;
+}
+
+.mobile-navbar-top {
+    display : none;
+    background-color: var(--support-brown);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--support-white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mobile-navbar-bottom {
+    display : none;
+    background-color: var(--support-brown);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--support-white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    height: 20vh;
+    background-color: #7c2020;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    align-items: end;
+    padding-bottom: 1vh;
+    
+}
+
+footer .left, .middle, .right{
+    width: 100vw;
+    flex-basis: 33.33%;
+    padding-bottom: 0.5vh;
+  }
+
+footer .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+}
+
+footer .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+footer h2  {
+    color:#ffffffc6;
+    padding-left: 2vw;
+}
+
+
+footer ul li p {
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color:#ffffff9c;
+    padding-left: 2vw;
+    list-style-type: none;
+    
+}
+
+footer a {
+    color:#ffffff9c;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        display: none;
+
+    }
+    .mobile-navbar-bottom {
+        display: flex;
+        position: fixed;
+        bottom: 0px;
+        height: 5vh;
+        width: 100vw;
+        z-index: 100;
+        
+    }
+
+    .mobile-navbar-top {
+        display: flex; 
+        height: 5vh;
+        width: 100vw;
+        z-index: 100;
+        display: flex;
+        position: fixed;
+        top: 0;
+    }
+
+    .mobile-navbar-bottom .search-box .search-input input[type="text"] {
+        width: 75vw; 
+        padding-left: 1vw;
+    }
+    
+    .mobile-navbar .search-box .search-button {
+        padding-right: 1vw;
+    }
+
+    .mobile-navbar-bottom .search-box {
+        height: auto;
+    }
+
+    .home h1 {
+        font-size: 15vw;
+        width: 100vw;
+    }
+
+    .home h2 {
+        font-size: 7.5vw;
+        width: 75vw;
+    }
+
+    .home .button {
+        padding-bottom: 9vh;
+    }
+
+    .mobile-navbar-top .navbar-username {
+        padding-left: 0.5vw;
+    }
+
+    .rec{
+        border-radius: 5px;
+    }
+
 }
 
 /* Style the logo */
@@ -197,22 +355,31 @@
 }
 
 .recommendation {
-  background-color: var(--support-brown);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-  flex-wrap: wrap;
-  border: 10px var(--primary-yellow)
+  justify-content: flex-start;
+  border: 10px var(--primary-yellow);
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: none;
+  height: auto;
+  max-width: 100%;
 }
 
 .rec {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  border-radius: 10px;
-  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
+  height: 300px;
   background-color: var(--primary-orange);
-  width: 25vw;
+  width: 100%;
+  min-width: 33.333vw;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primary-yellow);
+  border-radius: 5px;
+  z-index: 25;
+  
 }
 
 .rec-title {
@@ -220,21 +387,14 @@
     padding-top: 10px;
 }
 
+.rec:hover {
+    transform: scale(1.01);
+}
+
 .line-break {
     width: 100%;
   }
 
-.rec-link {
-    
-}
-
-@media screen and (max-width: 600px) {
-    .recommendation > div {
-        display: flex;
-        justify-content: center;
-        flex-basis: 80%;
-    }
-}
 
 .food-title {
     text-align: center;
@@ -255,4 +415,100 @@
     width: 100%;
     background-color: var(--support-brown);
     height:35vh;
+}
+
+
+.main-desc {
+    font-size: 10px;
+}
+
+.desc-img {
+    border: 10px var(--support-brown);
+    border-radius: 10px;
+    width: 180px;
+    height: auto;
+}
+
+.recommendation-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--support-brown);
+    color: var(--support-white);
+    letter-spacing: 5px;
+    font-size: 2vw;
+    font-family: 'Croissant One', cursive;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.sub-home {
+    /* Set the background image and its properties */
+    background-image: url('assets/photo/home.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 70vh; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+.sub-home h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    width: 65vw;
+    margin: auto;
+}
+
+.sub-main {
+    width: 100%;
+    height: 300px;
+    background-color: #7c2020;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: ;
+    color:  white;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.delivery {
+    display: flex;
+    height: auto;
+    width: 500px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.delivery > img {
+    width: 150px;
+    height: auto;
+    margin:auto;
+}
+
+.delivery > h1 {
+    width: 180px;
+    height: auto;
+    margin:auto;
+    color: white;
+}
+
+.sub-main ul {
+    width: 200px;
+    height: auto;
+    margin:auto;
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
 }
