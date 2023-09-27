@@ -36,3 +36,33 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
 });
+
+function scrollContent(direction) {
+    const content = document.getElementById('next-section');
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    const widthPercentage = 33.33333; // Adjust this percentage as needed
+    const isAtLeftLimit = content.scrollLeft === 0;
+    const isAtRightLimit = content.scrollLeft + content.clientWidth === content.scrollWidth;
+    const scrollAmount = (viewportWidth * widthPercentage) / 100;
+    const leftButton = document.querySelector('.scroll-button.left');
+    const rightButton = document.querySelector('.scroll-button.right');
+  
+    if (direction === 'left') {
+      content.scrollLeft -= scrollAmount;
+    } else if (direction === 'right') {
+      content.scrollLeft += scrollAmount;
+    }
+
+    if (isAtLeftLimit) {
+        leftButton.style.backgroundColor = 'red'; // Change to the desired color
+      } else {
+        leftButton.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Reset to the default color
+      }
+    
+      if (isAtRightLimit) {
+        rightButton.style.backgroundColor = 'red'; // Change to the desired color
+      } else {
+        rightButton.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Reset to the default color
+      }
+  }
+  

@@ -133,6 +133,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    padding-top: 10px;
     color: var(--support-white);
     font-family: 'Montserrat', sans-serif;
 }
@@ -200,6 +201,9 @@ footer ul li {
     list-style-type: none;
 }
 
+.mobile-footer {
+    display:none ;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -213,9 +217,31 @@ footer ul li {
         position: fixed;
         bottom: 0px;
         height: 5vh;
-        width: 100vw;
+        width: auto;
         z-index: 100;
         
+    }
+    
+    .desktop-footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: flex;
+        padding-bottom: 6vh;
+        flex-direction: row;
+        width: auto;
+        height: auto
+    }
+
+    .mobile-footer .object-left {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+
+    .mobile-footer p {
+        font-size: 2vh;
     }
 
     .mobile-navbar-top {
@@ -231,10 +257,13 @@ footer ul li {
     .mobile-navbar-bottom .search-box .search-input input[type="text"] {
         width: 75vw; 
         padding-left: 1vw;
+        padding-bottom: 0.5vh;
     }
     
     .mobile-navbar .search-box .search-button {
         padding-right: 1vw;
+        padding-bottom: 0.5vh;
+        padding-top: 0.5vh
     }
 
     .mobile-navbar-bottom .search-box {
@@ -354,32 +383,64 @@ footer ul li {
     color: var(--support-white);
 }
 
+.recommendation-centerer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--support-brown);
+    padding-bottom: 4vh;
+}
+
+.scroll-button-left, .scroll-button-right {
+    width: 5vw;
+    height: 200px;
+    border: none;
+    border-radius: 0px;
+    background-color: #ffff005d;
+    overflow: hidden;
+    border-radius: 1vw;
+}
+
+.scroll-button-left:hover, .scroll-button-right:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+}
+
+
+
 .recommendation {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   border: 10px var(--primary-yellow);
   position: relative;
-  overflow-x: scroll;
-  overflow-y: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
   height: auto;
-  max-width: 100%;
+  max-width: 33.333vw;
+  max-width: 33.333vw;
 }
 
+
 .rec {
-  display: flex;
-  flex-direction: column;
-  border-radius: 0px;
-  height: 300px;
-  background-color: var(--primary-orange);
-  width: 100%;
-  min-width: 33.333vw;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--primary-yellow);
-  border-radius: 5px;
-  z-index: 25;
-  
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 300px;
+    background-color: #ffffff48;
+    width: 100%;
+    min-width: 33.333vw;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 25;
+    border-radius: 1vw;
+}
+
+.rec:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
 }
 
 .rec-title {
@@ -387,9 +448,6 @@ footer ul li {
     padding-top: 10px;
 }
 
-.rec:hover {
-    transform: scale(1.01);
-}
 
 .line-break {
     width: 100%;
@@ -430,7 +488,7 @@ footer ul li {
 }
 
 .recommendation-header {
-    display: flex;
+    display: absolute;
     flex-direction: column;
     width: 100%;
     justify-content: center;
@@ -439,11 +497,11 @@ footer ul li {
     background-color: var(--support-brown);
     color: var(--support-white);
     letter-spacing: 5px;
-    font-size: 2vw;
+    font-size: 1.8vh;
     font-family: 'Croissant One', cursive;
     padding-bottom: 20px;
     padding-top: 10px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .sub-home {
@@ -472,13 +530,15 @@ footer ul li {
 
 .sub-main {
     width: 100%;
-    height: 300px;
+    height: 60vh;
     background-color: #7c2020;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: ;
     color:  white;
     font-family: 'Dela Gothic One', cursive;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .delivery {
@@ -491,13 +551,13 @@ footer ul li {
 }
 
 
-.delivery > img {
+.delivery img {
     width: 150px;
     height: auto;
     margin:auto;
 }
 
-.delivery > h1 {
+.delivery h1 {
     width: 180px;
     height: auto;
     margin:auto;
@@ -508,7 +568,37 @@ footer ul li {
     width: 200px;
     height: auto;
     margin:auto;
-    margin-left: 40px;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
+.places {
+    width: 
+}
+
+@media screen and (max-width: 600px) {
+    .sub-main {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .sub-ul h1 {
+        margin-right: 200px;
+    }
+
+    .sub-complicated {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.sub-main p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.sub-complicated {
+    display: flex;
+    margin-top: 10px;
+}
+
