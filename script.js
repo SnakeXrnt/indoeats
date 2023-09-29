@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollButton.addEventListener('click', () => {
         // Scroll to the next section smoothly
         nextSection.scrollIntoView({ behavior: 'smooth' });
+
+
 });
     
     
@@ -52,17 +54,44 @@ function scrollContent(direction) {
     } else if (direction === 'right') {
       content.scrollLeft += scrollAmount;
     }
-
-    if (isAtLeftLimit) {
-        leftButton.style.backgroundColor = 'red'; // Change to the desired color
-      } else {
-        leftButton.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Reset to the default color
-      }
-    
-      if (isAtRightLimit) {
-        rightButton.style.backgroundColor = 'red'; // Change to the desired color
-      } else {
-        rightButton.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Reset to the default color
-      }
   }
+
   
+  function changequestion2() {
+    document.querySelector(".answer-one").innerHTML =  "question 2 answer 1";
+
+    document.querySelector(".answer-two").innerHTML = "question 2 answer 2";
+
+    document.querySelector(".answer-three").innerHTML = "question 2 answer 3";
+
+    document.querySelector(".answer-four").innerHTML = "question 2 answer 4";
+
+    document.querySelector(".answer-five").innerHTML = "question 2 answer 5";
+
+  }
+
+  function changequestion3() {
+    document.querySelector(".answer-one").innerHTML =  "question 3 answer 1";
+
+    document.querySelector(".answer-two").innerHTML = "question 3 answer 2";
+
+    document.querySelector(".answer-three").innerHTML = "question 3 answer 3";
+
+    document.querySelector(".answer-four").innerHTML = "question 3 answer 4";
+
+    document.querySelector(".answer-five").innerHTML = "question 3 answer 5";
+
+  }
+
+  function changequestion() {
+    document.querySelector(".answer-one").innerHTML =  "question 1 answer 1";
+
+    document.querySelector(".answer-two").innerHTML = "question 1 answer 2";
+
+    document.querySelector(".answer-three").innerHTML = "question 1 answer 3";
+
+    document.querySelector(".answer-four").innerHTML = "question 1 answer 4";
+
+    document.querySelector(".answer-five").innerHTML = "question 1 answer 5";
+
+  }
