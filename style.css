@@ -52,12 +52,17 @@
 }
 
 .quiz {
+    font-weight: bold !important ;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #FFFFFF
 }
 
+.mobile-button {
+    display: none;
+}
 
 .quiz .quiz-left {
     min-width: 40vw;
@@ -444,6 +449,49 @@ footer ul li {
         border-radius: 5px;
     }
 
+    .scroll-button-left{
+        display: none;
+    }
+
+    .scroll-button-right{
+        display: none;
+    }
+
+
+
+    .recomendation {
+        width: 100%;
+
+    }
+
+    .mobile-button {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rec {
+        min-width: 150% !important;
+        padding-bottom: 1vh;
+    }
+
+    .bottom-stats {
+        padding-bottom: 8vh;
+    }
+
+    .quiz {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8vh;
+        
+    }
+
+    .quiz-left , .quiz-right {
+        width : 80vw !important;
+        margin: 2vh !important;
+        max-width: none !important;
+    }
+
 }
 
 /* Style the logo */
@@ -579,7 +627,7 @@ footer ul li {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    height: 300px;
+    height: max-content;
     background-color: #ffffff48;
     width: 25%;
     min-width: 20vw;
