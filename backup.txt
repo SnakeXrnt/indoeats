@@ -1,0 +1,43 @@
+ <div class="recommendation-centerer">
+        <button class="scroll-button-left" onclick="scrollContent('left')"><span class="material-symbols-outlined">
+            arrow_back
+            </span></button>
+        <div class="recommendation" id="next-section">
+                <a href="nasi.html">
+                <button class="rec">
+                    <h1 class="rec-title">Fried Rice<h1>
+                        <img src="assets/photo/home.png" alt="" class="desc-img">
+                        <p>☆☆☆☆☆</p>
+                    <p>Very Popular</p>
+                </button>
+                </a>
+                <a href="nasi.html">
+                    <button class="rec">
+                        <h1 class="rec-title">Noodles<h1>
+                            <img src="assets/photo/home.png" alt="" class="desc-img">
+                            <p>☆☆☆☆☆</p>
+                        <p>Popular</p>
+                    </button>
+                </a>
+                <a href="nasi.html">
+                    <button class="rec">
+                        <h1 class="rec-title">Meatballs<h1>
+                            <img src="assets/photo/home.png" alt="" class="desc-img">
+                            <p>☆☆☆☆</p>
+                        <p>Popular</p>
+                    </button>
+                </a>
+            </a>
+            <a href="nasi.html">
+                <button class="rec">
+                    <h1 class="rec-title">Satay<h1>
+                        <img src="assets/photo/home.png" alt="" class="desc-img">
+                        <p>☆☆☆</p>
+                    <p>Niche</p>
+                </button>
+            </a>
+        </div>
+        <button class="scroll-button-right" onclick="scrollContent('right')"><span class="material-symbols-outlined">
+            arrow_forward
+            </span></button>
+    </div>

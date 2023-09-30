@@ -89,33 +89,60 @@
         </div>
     </nav>
 
-    <div class="questions">
-        <button type="button" class="question-one" onclick="changequestion()">
-            <h1>1.</h1>
-            <p>blabla question</p>
-        </button>
-        <button type="button" class="question-two" onclick="changequestion2()">
-            <h1>2.</h1>
-            <p>blabla question</p>
-        </button>
-        <button type="button" class="question-three" onclick="changequestion3()">
-            <h1>3.</h1>
-            <p>blabla question</p>
-        </button>
+    <div class="quiz">
+        <div class="quiz-left">
+            <div class="question">
+                <h1>1. Do you have to eat vegetarian food?</h1>
+                <br>
+                <hr style="border: 1px solid #ffffff;">
+                <form class="awnser">
+                    <label>
+                        <input type="radio" name="answer" value="yes"> Yes
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="answer" value="not-really"> Not really
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="answer" value="no"> No
+                    </label>
+                </form>
+            </div>
+            
+        </div>
+        <div class="quiz-right">
+            <div class="question">
+                <h1>2. Can you eat pork / lard ?</h1>
+                <br>
+                <hr style="border: 1px solid #ffffff;">
+                <form class="awnser">
+                    <label>
+                        <input type="radio" name="answer" value="yes"> Yes
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="answer" value="not-really"> Not really
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="answer" value="no"> No
+                    </label>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <div class="status">
+        <div class="statusbar">
+            <div class="progressbar"></div>
+        </div>
     </div>
 
-    <div class="answers"">
-        <button class="answer-one">question 1 answer 1</button>
-        <button class="answer-two">question 1 answer 2</button>
-        <button class="answer-three">question 1 answer 3</button>
-        <button class="answer-four">question 1 answer 4</button>
-        <button class="answer-five">question 1 answer 5</button>
+    <div class="bottom-stats">
+        <p>1 of 4 Page</p>
+        <p>20%</p>
     </div>
-
     
-
-    <!-- beken form dewek, tpi pake backend gogole form, jadi kek kito beken text input dewek, gek pas kito submit data ny tu ke submit ke google form. ado caronyo tp ak lupo ak taro dmn
-    
-    skrng kw ejoke dulu la form biaso, gek ak cairke caro conenct ny ke google form. tek pocari sweat ak jadi males-->
 </body>
 </html>
