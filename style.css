@@ -99,6 +99,7 @@
     height: max-content;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .list-category {
@@ -112,17 +113,25 @@
     justify-content: space-evenly;
 }
 
-.list-category .nasi {
+.list-category {
     display: flex;
     min-width: 25%;
-    margin: 5px;
+    margin: 1px;
     padding: 10px;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
 }
 
-
+.nasi {
+    display: flex;
+    margin: auto;
+    padding: 7.5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 calc(32% - 10px);
+}
 
 .recomendation {
     display: flex;
@@ -368,13 +377,25 @@ footer ul li {
     color: white;
 }
 
+.rec p {
+    font-size: 17px;
+}
+
+.rec img {
+    width: 18vw;
+    height: auto;
+}
 
 
 @media screen and (max-width: 600px) {
 
+
+    .nasi {
+        width: 80%;
+    }
+
     .navbar {
         display: none;
-
     }
     .mobile-navbar-bottom {
         display: flex;
@@ -500,10 +521,29 @@ footer ul li {
         width : 80vw !important;
         margin: 2vh !important;
         max-width: none !important;
+        max-height: none;
+        height: max-content !important;
     }
 
 }
 
+/* williammmm, jingok proposal kito sdh bagus niannn 
+BTW yg di ss cuma versi web ny, yg hape ny kalo minta di lampirke baru lampirke. 
+
+maapkela kalo ak beken kw sengsaro nian ckny wkwkwkwk. benerin lah dulu versi ny buat web yang nasgor, ak ganti ganti dulu ini pake foto makanan/ asset ny sdh ak siapin*/
+
+@media screen and (max-width: 610px) {
+    .list-category {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .rec p {
+        font-size: 25px;
+    }
+}
 /* Style the logo */
 .logo a {
     text-decoration: none;
@@ -633,19 +673,22 @@ footer ul li {
 }
 
 
+
 .rec {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
     height: max-content;
     background-color: #ffffff48;
-    width: 25%;
-    min-width: 20vw;
+    width: 32%;
+    min-width: 25vw;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     z-index: 25;
     border-radius: 1vw;
+    min-height: 25.55vh;
+    max-height: 25.55vh;
 }
 
 .rec:hover {
@@ -842,7 +885,7 @@ footer ul li {
     .sub-main {
         flex-direction: column;
         height: 70vh;
-        margin-bottom: 10vh;
+        margin-bottom: 20vh;
     }
 
     .sub-ul h1 {
@@ -907,3 +950,40 @@ footer ul li {
     overflow: auto;
 }
 
+
+.rec-new {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    border-radius: 2vw;
+    background-color: rgba(144, 1, 1, 0.5); /* Background color with transparency */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF
+}
+
+
+.rec-left, .rec-right img{
+    margin: auto;
+    justify-content: center;
+    vertical-align: middle;
+    width: 180px;
+    height: 116.757px;
+}
+
+.rec-right img {
+    background-color: rgba(255, 255, 255, 0.1); /* Background color with transparency */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2vw;
+    object-fit: cover;
+}
+
+/* right ny bagus tnpa padding. tlg apusi ini  */
+
+.rec-left {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}

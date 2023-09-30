@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    
     const recommendations = [
         "Search for a restaurant near you",
         "Search for pizza",
@@ -24,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Call the function to start changing the placeholder text with fade-in/fade-out effect
     updatePlaceholder();
+
 
     const scrollButton = document.getElementById('scroll-button');
     const nextSection = document.getElementById('next-section');
